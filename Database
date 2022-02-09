@@ -1,0 +1,18 @@
+create database batch_5723;
+use batch_5723;
+create table login(id bigint primary key auto_increment,username varchar(255),password varchar(255));
+insert into login(username,password)values("admin","admin"); 
+select * from login;
+
+create table Studentlogin(id bigint primary key auto_increment,username varchar(255),password varchar(255));
+insert into Studentlogin(username,password)values("ritu","ritu"); 
+select * from Studentlogin;
+
+create table College(id bigint primary key auto_increment,collegename varchar(255),collegelocation varchar(255),collegeadmin varchar(255),collegeemail varchar(255));
+select * from College;
+
+create table Placement( id bigint primary key auto_increment,name varchar(225),college varchar(255),date varchar(255), qualification varchar(255),year varchar(255));
+select * from Placement;
+
+create table Student(id bigint primary key auto_increment,studentname varchar(255),departmentname varchar(255),mailid varchar(255),mobileno varchar(255),address varchar(255));
+select * from Student;
